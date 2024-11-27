@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math-o-Matik</title>
+  <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">Math-o-Matik</div>
+  </header>
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Solve Your Math Equations with <span>Math-o-Matik</span></h1>
+      <p>Write your mathematical equations and get instant solutions!</p>
+    </div>
+  </section>
+
+  <!-- Main Section with Canvas and Submit -->
+  <section class="solver">
+    <div class="container">
+      <div id="canvasContainer" class="canvas-container">
+        <h2>Input Equation</h2>
+        <canvas id="inputCanvas"></canvas>
+        <input type="file" id="uploadInput" class="upload-btn" accept="image/*">
+        <button id="undoBtn">Undo</button>
+      </div>
+      <button class="submit-btn" onclick="showSolution()">Submit</button>
+
+      <!-- Answer Panel, sliding over the input canvas -->
+      <div id="answerCanvas" class="answer-canvas">
+        <button class="close-btn"  onclick="closeSolution()">✖</button>
+        <h2>Solution</h2>
+        <p id="solutionText">Your solution will appear here.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <footer id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Get in touch for support or more information about Math-o-Matik.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
